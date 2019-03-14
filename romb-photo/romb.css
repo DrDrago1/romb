@@ -1,0 +1,121 @@
+body{
+    background-color: #444;
+}
+#preloader{
+    width: 1px;
+    height: 1px;
+    border: 1px solid blue;
+    margin-left: 50vw;
+    margin-top: 50vh;
+}
+#preloader figure{
+    background-color:transparent; 
+    width: 500px;
+    height: 500px;
+    transform: translateX(-60%) translateY(-50%) rotate(45deg);
+    box-shadow: 0 0 50px 5px black;
+    overflow: hidden ;
+    opacity: 1;   
+}
+#preloader img,
+#preloader figcaption{
+    opacity: 1;
+    
+}
+#preloader figcaption{
+    transform: rotate(-45deg) translateX(500px) translateY(-400px);
+}
+#preloader figure img {
+	transform: scale(1.2)rotate(-45deg) translateX(-150px) translateY(-300px);
+	transition: .3s ease-in-out;
+}
+#preloader figure:hover img {
+    transform: scale(1)rotate(-45deg) translateX(-170px) translateY(-320px) ;
+    
+}
+#p{
+    width: 1px;
+    height: 1px;
+    transform:rotate(-45deg) translateY(329px) translateX(663px);
+    animation: sur 2s 1;
+}
+@keyframes sur{
+    from{
+        background-color: #444;
+        width: 500px;
+        height: 500px;
+        transform:rotate(-45deg) translateY(329px) translateX(663px);
+    }
+    50%{
+        background-color: #444;
+    }
+    99.9%{
+        background-color: transparent;
+        width: 500px;
+        height: 500px;
+        transform:rotate(-100deg) translateY(329px) translateX(663px);
+    }
+    to{
+        width: 1px;
+        height: 1px;
+    }
+}
+h3:hover{
+    opacity: 1;
+}
+h3{
+    color: #30C5D0;
+    transform: translateY(-40px) translateX(-22px);
+    font-size: 50px;
+    animation: pad 3s 1;
+    
+}
+@keyframes pad{
+    from{
+        color: #444;
+    }
+    50%{
+        color: #444;
+    }
+    to{
+        color: #30C5D0;
+    }
+}
+p{
+    transform: translateX(-45px) translateY(40px);
+    color: rgb(156, 184, 2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    animation: verde 5s 1;
+    
+}
+@keyframes verde{
+    from{
+       opacity: 0;
+    }
+    to{
+       opacity: 1;
+    }
+}
+#social{
+    transform: translateY(100px) translateX(-36px);
+    font-size: 25px;
+    letter-spacing: 10px;
+    animation: soc 3s 1;
+    
+}
+
+@keyframes soc{
+    from{
+        transform: translateY(700px) translateX(-40px);
+    }
+    to{
+        transform: translateY(100px) translateX(-36px);
+    }
+}
+i{
+    color:#30C5D0 ;
+}
+
+
